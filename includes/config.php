@@ -1,7 +1,10 @@
 <?php
   $mydomain = $_SERVER['HTTP_HOST'];
   $domaintoproxy = "https://thepiratebay.org";
-<!-- PopAds.net Popunder Code for www.tpbay.win -->
+
+  # Add your custom code here and it will be inserted before the closing </body> tag (e.g. Google Analytics)
+  $footerCode = <<<EOT
+  <!-- PopAds.net Popunder Code for www.tpbay.win -->
 <script type="text/javascript" data-cfasync="false">
 /*<![CDATA[/* */
   var _pop = _pop || [];
@@ -26,8 +29,6 @@
 /*]]>/* */
 </script>
 <!-- PopAds.net Popunder Code End -->
-  # Add your custom code here and it will be inserted before the closing </body> tag (e.g. Google Analytics)
-  $footerCode = <<<EOT
 <!-- <a href="https://proxybay.bz">More Pirate Bay Proxies</a><br> -->
 <!-- <a href="https://proxybay.bz/setup.html">Set up your own proxy</a><br> -->
 EOT;
